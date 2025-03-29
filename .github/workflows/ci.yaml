@@ -19,7 +19,7 @@ jobs:
       - name: フォーマット実行
         run: test -z $(gofmt -l .)
       - name: 静的解析実行
-        run: go vet ./..
+        run: go vet .
       - name: テスト実行
         run: go test
       - name: ビルド実行
